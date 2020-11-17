@@ -1,0 +1,112 @@
+.inquiry{
+    font-family: $font-display;
+    // background-color: $color-grey-light-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    // height: 0rem;
+
+
+
+    background-image: -webkit-linear-gradient(
+        rgba($color-secondary, 0.8),
+         rgba($color-grey-dark-5, 0.8)), 
+         url(/img/faq.jpg);
+        background-image: linear-gradient(
+            rgba($color-black, 0.1),
+             rgba($color-black, 0.9)),
+              url(/img/faq.jpg);
+     background-size: contain;
+    //  background-repeat: no-repeat;
+    
+    background-attachment: fixed;
+    padding: 5rem 5rem;
+
+    
+
+
+
+
+    &__faq{
+        width: 100%;
+        max-width: 80rem;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
+}
+
+.accordion-item{
+    border-radius: .5rem;
+    background-color: $color-water-light;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    box-shadow: .5rem .2rem .5rem $color-black-1;
+        
+}
+
+
+
+.accordion-link{
+    font-size: 2.2rem;
+    color: $color-grey-light-3;
+    text-decoration: none;
+    background-color: $color-water-light-1;
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem .5rem;
+
+    &--remove{
+        display: none;
+    }
+
+
+}
+
+.accordion-link ion-icon{
+    color: $color-secondary-dark;
+    padding: .5rem;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    background-color: $color-water-dark;
+    font-size: $default-font-size;
+    color: $color-grey-dark-2;
+    transition: max-height 650ms;
+  
+    &__remark{
+       padding: 2rem;    
+    }    
+
+}
+
+.answer::before{
+    content: "";
+    position: absolute;
+    width: .6rem;
+    height: 90%;
+    background-color:$color-secondary-light-2;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+}
+
+
+.accordion-item:target .answer{
+    max-height: 20rem;
+}
+
+.accordion-item:target .accordion-link--add{
+    display: none;
+}
+
+.accordion-item:target .accordion-link--remove{
+    display: block;
+}

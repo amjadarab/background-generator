@@ -1,0 +1,28 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/academies";
+@import "components/button";
+@import "components/opportunities";
+@import "components/our-values";
+@import "components/our-support";
+@import "components/story";
+@import "components/booking";
+@import "components/faq";
+
+
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navigation";
+@import "layout/footer";
+@import "layout/icon";
+
+
+
+@import "pages/home";

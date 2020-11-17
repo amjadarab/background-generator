@@ -1,0 +1,86 @@
+.section-team{
+    background-color: $color-grey-light-3;
+
+    &__team-wrapper{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    &__pass{
+        width: 32rem;
+        background-color: $color-water-light-2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem 0;
+        box-shadow: .5rem .5rem 3rem $color-black-1;
+
+        &--backdrop{
+            width: 100%;
+            height: 26rem;
+            object-fit: cover;
+            clip-path: polygon(0 0, 100% 0, 100% 74%, 0% 100%);
+
+        }
+
+        &--profile{
+            width: 15rem;
+            height: 15rem;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: -11rem;
+            z-index: 999;
+            border: .5rem solid $color-grey-light-3;
+        }
+    }
+
+    &__job-title{
+        color: $color-grey-dark-4;
+        font-size: $default-font-size;
+        font-family: $font-display;
+        font-weight: 300;
+    }
+
+    &__direction{
+        font-size: $default-font-size;
+        margin: 1.5rem 0;
+        font-style: italic;
+        text-align: center;
+    }
+}
+
+.social-media{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+    margin-top: 2rem;
+    border-top: .2rem solid $color-black-1;
+
+}
+
+// .feature__icons{
+//     width: 3rem;
+// }
+
+@media screen and (min-width: 700px) {
+    .section-team__team-wrapper{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-team__pass{
+        margin: 2rem;
+    }
+
+}
+
+.gap {
+    padding-top: 4rem;
+}

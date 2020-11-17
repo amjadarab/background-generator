@@ -1,0 +1,39 @@
+.opportunities{
+    box-sizing: border-box;
+    text-align: center;
+    float: left;
+    background-color:$color-grey-light-3;
+    padding: 5rem 5rem;
+
+
+    &__cal-1--pic1{
+        height: 35rem;
+        width: 80%; 
+        // padding: 2rem 0;
+        overflow: hidden;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .4);
+        border-radius: .5rem;
+        transition: all .2s;
+
+        &:hover{
+            transform: scale(1.05);
+            box-shadow: 0 2.5rem 4rem rgba($color-black, .5);
+
+        }
+    }   
+    
+    &__headline{
+        padding-top: 2rem;
+    }
+    &__cal-1--cont1{
+        line-height: 145%;
+        color:$color-grey-dark-4;
+        font-size: 1.7rem;
+        width: 70%;
+        margin-left: 15%;
+        padding-top: 2rem;
+    }
+
+
+  }
+
